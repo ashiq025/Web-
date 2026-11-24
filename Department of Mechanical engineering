@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Department of Mechanical Engineering | SRM TRP</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    color: #333;
+}
+
+header {
+    background: #0b2545;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+header p {
+    color: #8ecae6;
+    margin-top: 5px;
+}
+
+nav {
+    background: #13315c;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffb703;
+}
+
+.hero {
+    background: linear-gradient(rgba(11,37,69,0.85), rgba(11,37,69,0.85)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ffb703;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+section {
+    padding: 40px 8%;
+}
+
+h2.title {
+    color: #0b2545;
+    border-left: 6px solid #ffb703;
+    padding-left: 12px;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #13315c;
+    margin-bottom: 10px;
+}
+
+.labs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.labs span {
+    background: #e0e7ff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    max-width: 600px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background: #0b2545;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background: #13315c;
+}
+
+footer {
+    background: #0b2545;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Department of Mechanical Engineering</h1>
+    <p>SRM TRP Engineering College, Trichy - Excellence in Design & Manufacturing</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#programs">Programs</a>
+    <a href="#labs">Labs</a>
+    <a href="#admission">Admission</a>
+</nav>
+
+<div class="hero" id="home">
+    <h2>Build Machines. Build Future.</h2>
+    <p>NBA Accredited | State-of-the-art Workshops | 100% Placement Assistance</p>
+    <button onclick="document.getElementById('admission').scrollIntoView()">Apply Now 2026</button>
+</div>
+
+<section id="about">
+    <h2 class="title">About Department</h2>
+    <p>The Department of Mechanical Engineering aims to provide quality technical education and develop skilled engineers with knowledge of design, manufacturing and modern technology.</p>
+</section>
+
+<section id="programs">
+    <h2 class="title">Our Programs</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>B.E Mechanical Engineering</h3>
+            <p>Learn machine design, manufacturing, thermodynamics and engineering principles.</p>
+        </div>
+
+        <div class="card">
+            <h3>CAD and Design</h3>
+            <p>Learn computer-aided design and 3D modelling techniques.</p>
+        </div>
+
+        <div class="card">
+            <h3>Manufacturing</h3>
+            <p>Understand modern manufacturing processes and industrial technology.</p>
+        </div>
+    </div>
+</section>
+
+<section id="labs">
+    <h2 class="title">Our Laboratories</h2>
+
+    <div class="labs">
+        <span>CAD Lab</span>
+        <span>Physics Lab</span>
+        <span>Thermal Engineering Lab</span>
+        <span>Manufacturing Lab</span>
+        <span>Fluid Mechanics Lab</span>
+        <span>Workshop</span>
+    </div>
+</section>
+
+<section id="admission">
+    <h2 class="title">Admission Enquiry</h2>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter your phone number" required>
+
+        <label>Select Course</label>
+        <select>
+            <option>B.E Mechanical Engineering</option>
+        </select>
+
+        <label>Your Message</label>
+        <textarea rows="4" placeholder="Enter your message"></textarea>
+
+        <input type="submit" value="Submit Enquiry">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2026 SRM TRP Engineering College. All Rights Reserved.</p>
+    <p>Department of Mechanical Engineering</p>
+</footer>
+
+</body>
+</html>
